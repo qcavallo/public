@@ -9,7 +9,7 @@ Il défini ensuite les regles iptable
 ensuite, des fonctions sont définies permettant d'arreter le firewall, clear les regles du firewall, de redemarrer ces regles et les tester
 
 q3:structure de controle itérative dans des tableaux
-q4
+q4: Cela va ouvrir plusieurs ports avec la command iptables
 q5:
 /sbin/iptables -A INPUT -p tcp --dport ${PORT} -j ACCEPT
  -A pour append, -p permet d'indiquer le protocole, --dport avec la variable port doit permettre d'indiquer sur quel port agir mais j'ai pas trouvé ou elle est défini, -j pour selectionner la cible.
