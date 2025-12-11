@@ -99,10 +99,15 @@ fw_clear () {  #redemarre les regles mais sans arreter le pare feu
 }
 
 q24:
+
 fw_test () {  #
+
 fw_save   #fonction qui fait un backup des regles iptables
+
 fw_restart  # fonction qui utilise la fonction fw_stop puis relance la fonction fw_start
+
 sleep 30  # fais patienter 30s avant la suite
+
 fw_restore # fonction qui restore le backup 
 }
 
