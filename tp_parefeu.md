@@ -1,6 +1,8 @@
 Analyse générale:
+
 q1
 Ce fichier est un fichier de configuration pour pare feu via des regles ip table. 
+
 q2
 Le script lance le firewall daemon (active le service) avec pour base un script firewall.sh
 Puis le script défini les variables utilisées tels que les ports utilisés
@@ -9,7 +11,9 @@ Il défini ensuite les regles iptable
 ensuite, des fonctions sont définies permettant d'arreter le firewall, clear les regles du firewall, de redemarrer ces regles et les tester
 
 q3:structure de controle itérative dans des tableaux
+
 q4: Cela va ouvrir plusieurs ports avec la command iptables
+
 q5:
 /sbin/iptables -A INPUT -p tcp --dport ${PORT} -j ACCEPT
  -A pour append, -p permet d'indiquer le protocole, --dport avec la variable port doit permettre d'indiquer sur quel port agir mais j'ai pas trouvé ou elle est défini, -j pour selectionner la cible.
